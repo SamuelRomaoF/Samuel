@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trabalho em JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <script>
+        function mostrarDescricao() {
+            var descricao = document.getElementById("descricao");
+            if (descricao.style.display === "none") {
+                descricao.style.display = "block";
+            } else {
+                descricao.style.display = "none";
+            }
+        }
+
+        function mostrarParticipantes() {
+            var participantes = document.getElementById("participantes");
+            if (participantes.style.display === "none") {
+                participantes.style.display = "block";
+            } else {
+                participantes.style.display = "none";
+            }
+        }
+
+        function adicionarParticipante() {
+            var participante = prompt("Digite o nome do participante:");
+            if (participante != null && participante != "") {
+                var lista = document.getElementById("participantes-lista");
+                var item = document.createElement("li");
+                item.appendChild(document.createTextNode(participante));
+                lista.appendChild(item);
+            }
+        }
+    
+        function mostrarIntroducao() {
+            var introducao = document.getElementById("introducao");
+            if (introducao.style.display === "none") {
+                introducao.style.display = "block";
+            } else {
+            introducao.style.display = "none";
+    }
+}
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    <header>
+        <p class="descricao1">JAVASCRIPT</p>
+        </header>
+        
+    
+    </body>
+    
+        <div class="botões">
+        <button class="botao1" onclick="mostrarIntroducao()">introdução</button><br/><br/>
+        <p id="introducao" style="display:none;">JavaScript é uma linguagem de programação<br/>amplamente utilizada para criar páginas web<br/>interativas e dinâmicas. Desenvolvida<br/> originalmente pela Netscape, ela se tornou uma<br/> das tecnologias fundamentais da web moderna.<br/> Com sua sintaxe simples e flexível, JavaScript<br/> permite aos desenvolvedores criar funcionalida<br/>des complexas que melhoram significativamente<br/> a experiência do usuário em websites. Além disso,<br/> com o surgimento do Node.js, o JavaScript também<br/> é usado no desenvolvimento de aplicativos de<br/> servidor, ampliando ainda mais suas capacidades<br/> e aplicações.</p>
+        
+        <button class="botao3" onclick="mostrarParticipantes()">Participantes</button><br/>
+        <p id="participantes" style="display:none;"> Samuel Romão<br/><br/> Kharen Ellisa<br/><br/> Rickelmy<br/><br/> Vinicius Caldas<br/><br/> Marcos Fernando<br/><br/> Thierry</p>
+        <ul id="participantes" style="display:none;" id="participantes-lista"></ul>
+        
+        <div class="logo-anhanguera">
+            <img src="https://i.im.ge/2024/03/20/Rg6N7p.foto3-removebg.png" alt="imagem">
+        </div>
+        <button class="botao2" onclick="mostrarDescricao()">Historia do javascript</button><br/><br/>
+        <p id="descricao" style="display:none;">JavaScript foi criado por Brendan Eich em 1995,<br/>enquanto ele trabalhava na Netscape Communications<br/> Corporation. Originalmente chamado de LiveScript,<br/> o nome foi alterado para JavaScript para capitalizar a<br/> popularidade da linguagem Java na época. JavaScript<br/> logo se tornou essencial para o desenvolvimento web,<br/> permitindo a criação de conteúdo dinâmico e interativo.<br/> Em 1997, a linguagem foi padronizada pela ECMA<br/> International, resultando no ECMAScript, que serve<br/> como base para o JavaScript moderno. Desde então,<br/> o JavaScript evoluiu bastante e se tornou uma das<br/> linguagens mais usadas no mundo, não só para<br/> desenvolvimento web, mas também para aplicativos<br/> móveis e de servidor.</p>
+
+        </div>
+        
+        <div class="logo-javascript">
+        <img src="https://i.im.ge/2024/03/20/Rb7dI4.foto2-png.png" alt="imagem">
+    </div>
+    
+    
+    <footer>
+        <p>Trabalho em JavaScript - Nilton Segunda-Feira</p>
+    </footer>
+    
+</html>
